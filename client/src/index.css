@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "poppins";
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.75rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2.25rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white; /* Text color */
+  transition: background-color 5000s ease-in-out 0s; /* Smooth transition */
+}
+
+/* Firefox */
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus,
+input:-moz-autofill:active {
+  -moz-text-fill-color: white; /* Text color */
+  transition: background-color 5000s ease-in-out 0s; /* Smooth transition */
+}
+
+.banner-img {
+  mask-image: linear-gradient(to right, transparent, black 85%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 85%);
+}
+
+.tr-video {
+  mask-image: linear-gradient(to top, transparent 0%, #191919 40%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, #191919 40%);
+}
+
+input[name="email"]:not(:placeholder-shown) + label[for="email"],
+input[name="confirmPass"]:not(:placeholder-shown) + label[for="confirmPass"],
+input[name="password"]:not(:placeholder-shown) + label[for="password"] {
+  top: -50%;
+}
